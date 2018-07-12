@@ -1,0 +1,151 @@
+.series {
+    width: 100%;
+    .icon {
+        text-align: left;
+        height: 60px;
+        width: 100%;
+    }
+    .series_backpic {
+        width: 100%;
+        background: #e5e5d5;
+        height: 270px;
+        overflow: hidden;
+        border-top: solid 2px #000;
+    }
+}
+
+.swiper-container3 {
+    margin: 24px 28px;
+    overflow: visible;
+    .swiper-slide {
+        width: 214px;
+        position: relative;
+        .pic {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .text {
+            h2 {
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1.5;
+                color: #fff;
+                max-height: 24px;
+                overflow: hidden;
+                a {
+                    color: #000;
+                }
+                a:hover {
+                    color: #e50012;
+                }
+            }
+            span {
+                font-size: 12px;
+                line-height: 1.5;
+                color: #666;
+                max-height: 36px;
+                overflow: hidden;
+                display: block;
+            }
+        }
+    }
+    .swiper-button-next_sp {
+        width: 30px;
+        height: 30px;
+        right: -40px;
+        background-image: none;
+    }
+    .swiper-button-prev_sp {
+        width: 30px;
+        height: 30px;
+        left:-24px;
+        background-image: none;
+    }
+}
+
+@media (max-width: 1052px) and (min-width: 768px) {
+    .swiper-container3 {
+        margin: 24px 28px;
+        overflow: visible;
+        .swiper-slide {
+            width: 214px;
+            position: relative;
+            .pic {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            .text {
+                h2 {
+                    font-size: 16px;
+                    font-weight: bold;
+                    line-height: 1.5;
+                    color: #fff;
+                    max-height: 24px;
+                    overflow: hidden;
+                    a {
+                        color: #000;
+                    }
+                    a:hover {
+                        color: #e50012;
+                    }
+                }
+                span {
+                    font-size: 12px;
+                    line-height: 1.5;
+                    color: #666;
+                    max-height: 36px;
+                    overflow: hidden;
+                    display: block;
+                }
+            }
+        }
+        .swiper-button-next_sp {
+            width: 30px;
+            height: 30px;
+            right: -40px;
+            background-image: none;
+        }
+        .swiper-button-prev_sp {
+            width: 30px;
+            height: 30px;
+            left:-24px;
+            background-image: none;
+        }
+    } 
+}
+
+@media (max-width: 767px) {
+    .series {
+        .icon {
+            height: auto;
+            width: 100%;
+            img {
+                width: 2rem;
+                margin: 0 0 0.3rem 0;
+            }
+        }
+        .series_backpic {
+            height: auto;
+        }
+    }
+    .swiper-container3 {
+        margin: 0.5rem 1rem;
+        overflow: visible;
+        .swiper-slide {
+            .text {
+                h2 {
+                    font-size: 0.44rem;
+                    max-height: 0.66rem;
+                }
+                span {
+                    font-size: 0.36rem;
+                    max-height: 1.08rem;
+                }
+            }
+        }
+    }
+}

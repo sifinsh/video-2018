@@ -1,0 +1,59 @@
+.list_recommend {
+    position: relative;
+    margin: 0 0 15px 0;
+    .pic {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .text {
+        position: absolute;
+        bottom: 0;
+        height: 73px;
+        width: 100%;
+        z-index: 101;
+        background: url(../images/pd_shipin_20180628_06.png) repeat-x;
+        span {
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            display: block;
+            margin: 40px 10px 0 10px;
+            max-height: 24px;
+            overflow: hidden;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .list_recommend {
+        .text {
+            span {
+                font-size: 14px;
+                font-weight: normal;
+                margin: 40px 10px 0 10px;
+                max-height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .list_recommend {
+        margin: 0.2rem 0.1rem 0 0.1rem;
+        .text {
+            height: 2rem;
+            background-size: 100% 100%;
+            span {
+                font-size: 0.36rem;
+                font-weight: normal;
+                margin: 1.4rem 0.1rem 0 0.1rem;
+                max-height: 0.54rem;
+            }
+        }
+    }
+}

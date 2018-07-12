@@ -1,0 +1,80 @@
+.right_big {
+    position: relative;
+    margin: 15px 0 0 0;
+    .pic {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    .text {
+        position: absolute;
+        bottom: 0;
+        height: 73px;
+        width: 100%;
+        z-index: 101;
+        background: url(../images/pd_shipin_20180628_06.png) repeat-x;
+        span {
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            display: block;
+            margin: 40px 10px 0 10px;
+            max-height: 24px;
+            overflow: hidden;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+.right_abs {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+    max-height: 76px;
+    overflow: hidden;
+    margin: 10px 0 0 0;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .right_big {
+        .text {
+            span {
+                font-size: 16px;
+                font-weight: normal;
+                margin: 40px 10px 0 10px;
+                max-height: 20px;
+                overflow: hidden;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .right_big {
+        margin: 0.3rem 0.2rem 0 0.2rem;
+        .text {
+            height: 2rem;
+            background-size: 100% 100%;
+            span {
+                font-size: 0.5rem;
+                font-weight: normal;
+                margin: 1rem 0.1rem 0 0.1rem;
+                max-height: 0.7rem;
+                overflow: hidden;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .right_abs {
+        font-size: 0.36rem;
+        max-height: 1.95rem;
+        margin: 0.2rem 0.4rem 0 0.4rem;
+    }
+}

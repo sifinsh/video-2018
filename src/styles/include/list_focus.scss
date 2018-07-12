@@ -1,0 +1,71 @@
+.list_topheight {
+    height: 50px;
+}
+.list_focus {
+    position: relative;
+    overflow: hidden;
+    a {
+        width: 100%;
+        height: 100%;
+    }
+    .backpic {
+        width: 100%;
+        height: 107px;
+        background: url(http://www.qstheory.cn/n7/images/ceshi/v7_column_20171102_01.png);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 11;
+    }
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 1.2;
+        margin: 60px 20px 0 20px;
+        max-height: 30px;
+        overflow: hidden;
+        a {
+            color: #fff;
+        }
+    }
+    img {
+        width: 100%;
+        transform: scale(1, 1);
+    }
+}
+
+.list_focus:hover {
+    img {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .list_topheight {
+        height: 30px;
+    }
+    .list_focus {
+        .title {
+            font-size: 18px;
+            margin: 70px 20px 0 20px;
+            max-height: 22px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .list_topheight {
+        height: 0.5rem;
+    }
+    .list_focus {
+        .backpic {
+            height: 2rem;
+        }
+        .title {
+            font-size: 0.5rem;
+            margin: 1rem 0.3rem 0 0.3rem;
+            max-height: 0.6rem;
+        }
+    }
+}

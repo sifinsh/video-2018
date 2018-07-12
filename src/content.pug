@@ -1,0 +1,19 @@
+doctype html
+html( lang="zh-cn")
+    head
+        include views/head
+    body
+        include views/wxshare
+        .container
+            .row
+                include views/nav
+                include views/menu
+                .clear
+                .col-md-10
+                    include views/con_left
+                .col-md-2
+                    include views/share
+        include views/foot
+        include views/bottom
+        script(src="http://www.qstheory.cn/n5/js/shipin_fenxiang.js")
+        script(src="http://w.cnzz.com/c.php?id=30019853")

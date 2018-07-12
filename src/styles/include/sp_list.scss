@@ -1,0 +1,47 @@
+.sp_list {
+    position: relative;
+    margin: 40px 0 0 0;
+    img {
+        width: 100%;
+    }
+    span {
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+        display: block;
+        margin: 10px  0 0 0;
+        max-height: 24px;
+        overflow: hidden;
+        a { 
+            color: #000;
+        }
+        a:hover { 
+            color: #e50012;
+        }
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .sp_list {
+        .text {
+            span {
+                font-size: 16px;
+                font-weight: normal;
+                margin: 40px 10px 0 10px;
+                max-height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .sp_list {
+        margin: 0.5rem 0.1rem 0 0.1rem;
+        span {
+            font-size: 0.36rem;
+            font-weight: normal;
+            margin: 0.1rem 0 0 0;
+            max-height: 0.54rem;
+        }
+    }
+}

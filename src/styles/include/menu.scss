@@ -1,0 +1,78 @@
+.sp_menu {
+    width: 100%;
+    background-color: #eeeede;
+    height: 60px;
+    line-height: 60px;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 60px;
+            color: #000;
+            padding: 0 35px;
+            float: left;
+            a {
+                color: #000;
+            }
+            a:hover {
+                color: #ff3c1f;
+            }
+        }
+        li.active {
+            position: relative;
+            .red_line {
+                position: absolute;
+                height: 4px;
+                top: -4px;
+                line-height: 0;
+                font-size: 0;
+                background-color: #ff3c1f;
+                border-left: solid 3px #eeeede;
+                border-right: solid 3px #eeeede;
+                z-index: 101;
+                width: 100%; 
+                left: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .sp_menu {
+        height: 50px;
+        line-height: 50px;
+        ul {
+            li {
+                font-size: 18px;
+                line-height: 50px;
+                padding: 0 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .sp_menu {
+        height: 1rem;
+        line-height: 1px;
+        width: auto;
+        ul {
+            li {
+                font-size: 0.44rem;
+                font-weight: normal;
+                line-height: 1rem;
+                padding: 0 0.4rem;
+            }
+        }
+    }
+}
+
+.swiper-container-menu {
+    .swiper-wrapper {
+        .swiper-slide {
+            width: auto;
+        }
+    }
+}

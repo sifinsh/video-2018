@@ -1,0 +1,99 @@
+.con_left {
+    .headtitle {
+        margin: 30px 0 0 0;
+        .eyebrow {
+            background-color: #e50012;
+            padding: 3px 10px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+        h1 {
+            font-size: 50px;
+            font-family: "Microsoft YaHei";
+            font-weight: bold;
+            line-height: 1.2;
+            max-height: 120px;
+            overflow: hidden;
+            margin: 15px 0 5px 0;
+            color: #000;
+        }
+        .pushtime {
+            font-size: 14px;
+            color: #000;
+        }
+        .xl_line {
+            height: 10px;
+            background-color: #e5e5d5;
+            margin: 20px 0 0 0;
+        }
+    }
+    .context {
+        margin: 25px 0 0 0;
+        background-color: #e5e5d5;
+        .abs {
+            span {
+                font-size: 20px;
+                color: #000;
+                line-height: 1.8;
+                padding: 20px 30px 30px;
+                display: block;
+            }
+        }
+        .video {
+            #videoArea {
+                iframe {
+                    width: 100%;
+                    height: 460px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .con_left {
+        margin: 0.5rem 0.2rem 0;
+        .headtitle {
+            margin: 0;
+            .eyebrow {
+                padding: 2px 5px;
+                font-size: 0.36rem;
+            }
+            h1 {
+                font-size: 0.7rem;
+                max-height: 1.44rem;
+                margin: 0.3rem 0 0.1rem;
+            }
+            .pushtime {
+                font-size: 0.36rem;
+            }
+            .xl_line {
+                height: 0.1rem;
+                margin: 0.3rem 0 0 0;
+            }
+        }
+        .context {
+            margin: 0.4rem 0 0 0;
+            background-color: #e5e5d5;
+            .abs {
+                span {
+                    font-size: 0.4rem;
+                    color: #000;
+                    line-height: 1.5;
+                    padding: 0.3rem 0.3rem 0.4rem;
+                    display: block;
+                }
+            }
+            .video {
+                #videoArea {
+                    iframe {
+                        width: 100%;
+                        height: 5.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

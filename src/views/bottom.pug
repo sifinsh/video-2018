@@ -1,0 +1,83 @@
+script(src="http://www.qstheory.cn/n5/h5boot/jquery.min.js")
+script(src="http://www.qstheory.cn/n7/js/swiper.min.js")
+script(src="http://www.qstheory.cn/n5/js/hqwg/pgwmenu.min.js")
+script(src="scripts/v7_bshare.js")
+script.
+  $(function() {
+    //reset rem
+    function setbaseFont() {
+      var w_width = $(window).width();
+      var baseFontSize = w_width / 10;
+      $('html').css('font-size', baseFontSize + 'px');
+    }
+    setbaseFont();
+    $(window).on('resize', function(e) {
+      setbaseFont();
+    });
+    //swiper焦点图
+    var swiper = new Swiper('.swiper-container1', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      parallax: true,
+      autoplay: 2500,
+      speed: 600,
+      preloadImages: false,
+      lazyLoading: true,
+      loop: true
+    });
+    var swiper3 = new Swiper('.swiper-container3', {
+      paginationClickable: true,
+      slidesPerView: 4,
+      spaceBetween: 30,
+      nextButton: '.swiper-button-next_sp',
+      prevButton: '.swiper-button-prev_sp',
+      parallax: true,
+      autoplay: 2500,
+      speed: 600,
+      preloadImages: false,
+      lazyLoading: true,
+      loop: true,
+      breakpoints: {
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 10
+        }
+      }
+    });
+     var swiper_menu = new Swiper('.swiper-container-menu', {
+       slidesPerView: 'auto',
+       freeMode: true,
+       mousewheel: true
+    });
+    //焦点图移入移出效果
+    $(".swiper-container1").mouseenter(function () {
+      swiper.stopAutoplay();
+    }).mouseleave(function () {
+      swiper.startAutoplay();
+    });
+    $(".swiper-container3").mouseenter(function () {
+      swiper3.stopAutoplay();
+    }).mouseleave(function () {
+      swiper3.startAutoplay();
+    });
+    $('.pd_top').pgwMenu({
+      mainClassName: 'pd_top',
+      dropDownLabel: '导航',
+      viewMoreLabel: '更多',
+      viewMoreMaxWidth: 100
+    });
+  })
